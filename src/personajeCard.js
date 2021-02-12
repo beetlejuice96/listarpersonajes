@@ -10,6 +10,7 @@ class PersonajeCard extends Component{
                 <img className='poncho' src={this.props.img} alt=""/>
                 <div className="card-body">
                     <h5 >{this.props.name}</h5>
+                    {this.props.children}
                 </div>
             </div>
         );

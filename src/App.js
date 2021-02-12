@@ -10,6 +10,13 @@ class App extends Component{
     cantidadLocaciones:null,
     cantidadEpisodios:null,
   }
+    handleClick = ({target})=> {
+      console.log('asdasdsad')
+      const nuevoArray = this.state.personajes.filter(personaje => personaje.name != target.id);
+      this.setState({
+          personajes:nuevoArray,
+      })
+    };
 
   componentDidMount() {
       fetch('https://rickandmortyapi.com/api/character')
@@ -78,6 +85,9 @@ class App extends Component{
                         name = {personajeCard.name}
                         key={i}
                       >
+                      <button id={personajeCard.name} onClick={this.handleClick}>
+                          delete
+                      </button>
                       </PersonajeCard>
                   )
                 })}
