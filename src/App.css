@@ -38,7 +38,7 @@
 }
 
 .header-body{
-  background: #282c34;
+  background: #282f38;
 }
 .header-body>h1{
   color: white;
@@ -61,4 +61,7 @@ img{
   background-color: goldenrod;
   border-bottom-left-radius:50px ;
   border-bottom-right-radius: 50px;
+}
+body{
+background: rgb(67, 79, 88)
 }
